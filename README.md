@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# Flippable Operator filterer
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Simple implement the following function on your ERC721 collection after Inhereting FlippableOperatorFilterer as in the [ExampleERC721](#https://github.com/ZenGo-X/flippable-operator-filterer/blob/main/contracts/ExampleERC721.sol)
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+```solidity
+    function flipOtherMarketplacesBlockingState() public onlyOwner {
+        flipBlockingState();
+    }
 ```
+
